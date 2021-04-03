@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'angularfirebase-authentication'`, () => {
+  it(`should have as title 'Do an 2 cua Hoang va An ne'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('angularfirebase-authentication');
+    expect(app.title).toEqual('Do an 2 cua Hoang va An ne');
   });
 
   it('should render title in a h1 tag', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to angularfirebase-authentication!');
+    expect(compiled.querySelector('h1').textContent).toContain('Welcome to Do an 2 cua Hoang va An ne!');
   });
 });

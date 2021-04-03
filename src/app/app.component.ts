@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angularfirebase-authentication';
+  title = 'Do an 2 cua Hoang va An ne';
 }

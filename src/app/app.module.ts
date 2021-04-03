@@ -23,6 +23,11 @@ import { environment } from '../environments/environment';
 
 // Auth service
 import { AuthService } from "./shared/services/auth.service";
+import { HomeComponent } from './components/home/home.component';
+import { HeaderComponent } from './shared/header/header.component';
+import { NavBarComponent } from './shared/nav-bar/nav-bar.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
+import { DetailComponent } from './components/detail/detail.component';
 
 
 @NgModule({
@@ -32,7 +37,12 @@ import { AuthService } from "./shared/services/auth.service";
     SignUpComponent,
     DashboardComponent,
     ForgotPasswordComponent,
-    VerifyEmailComponent
+    VerifyEmailComponent,
+    HomeComponent,
+    HeaderComponent,
+    NavBarComponent,
+    AboutUsComponent,
+    DetailComponent
   ],
   imports: [
     BrowserModule,
