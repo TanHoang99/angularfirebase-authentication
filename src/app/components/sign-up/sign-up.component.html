@@ -1,12 +1,6 @@
 <div class="displayTable">
   <div class="displayTableCell">
 
-    <div class="px-logo">
-      <a href="https://www.positronx.io" target="_blank">
-        <img src="https://www.positronx.io/wp-content/themes/positronx/img/logo-positronx-white.svg" alt="positronX.io - Learn Full Stack Development">
-      </a>
-    </div>
-
     <div class="authBlock">
       <h3>Sign Up</h3>
 
@@ -33,12 +27,13 @@
           Continue with Google
         </button>
       </div>
-      
     </div>
 
     <div class="redirectToLogin">
-      <span>Already have an account? <span class="redirect" routerLink="/sign-in">Log In</span></span>
+      <span>Already have an account? <span class="redirect" routerLink="/sign-in">Log In</span><a [routerLink]="['/home'] "class="nav-link m-2 menu-item"><i class="fas fa-address-card"></i>Home</a></span>
+      
     </div>
+    
   </div>
 
 </div>

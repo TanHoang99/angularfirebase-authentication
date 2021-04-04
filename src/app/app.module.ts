@@ -16,10 +16,13 @@ import { ForgotPasswordComponent } from './components/forgot-password/forgot-pas
 import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
 
 // Firebase services + enviorment module
-import { AngularFireModule } from "@angular/fire";
+
+import {AngularFireModule} from 'angularfire2';
 import { AngularFireAuthModule } from "@angular/fire/auth";
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from '../environments/environment';
+
+import { AngularFireDatabaseModule} from '@angular/fire/database';
 
 // Auth service
 import { AuthService } from "./shared/services/auth.service";
@@ -28,6 +31,10 @@ import { HeaderComponent } from './shared/header/header.component';
 import { NavBarComponent } from './shared/nav-bar/nav-bar.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { DetailComponent } from './components/detail/detail.component';
+import { ActionComponent } from './components/action/action.component';
+import { AdminSiderBarComponent } from './shared/admin-sider-bar/admin-sider-bar.component';
+import { AdminNavBarComponent } from './shared/admin-nav-bar/admin-nav-bar.component';
+import { FooterComponent } from './shared/footer/footer.component';
 
 
 @NgModule({
@@ -42,7 +49,11 @@ import { DetailComponent } from './components/detail/detail.component';
     HeaderComponent,
     NavBarComponent,
     AboutUsComponent,
-    DetailComponent
+    DetailComponent,
+    ActionComponent,
+    AdminSiderBarComponent,
+    AdminNavBarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -50,7 +61,8 @@ import { DetailComponent } from './components/detail/detail.component';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
     AngularFirestoreModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AngularFireDatabaseModule
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]

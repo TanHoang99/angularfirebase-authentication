@@ -13,17 +13,22 @@ import { HomeComponent } from 'src/app/components/home/home.component';
 import { AboutUsComponent } from '../../components/about-us/about-us.component';
 import { DetailComponent } from '../../components/detail/detail.component';
 
+import { ActionComponent } from '../../components/action/action.component'
+
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full'},
   { path: 'sign-in', component: SignInComponent},
   { path: 'register-user', component: SignUpComponent},
-  { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },
-  { path: 'home', component: HomeComponent, canActivate: [AuthGuard] },
-  { path: 'about-us', component: AboutUsComponent, canActivate: [AuthGuard] },
-  { path: 'project-detail', component: DetailComponent, canActivate: [AuthGuard] },
+  
+  { path: 'home', component: HomeComponent},
+  { path: 'about-us', component: AboutUsComponent },
+  { path: 'project-detail', component: DetailComponent },
 
   { path: 'forgot-password', component: ForgotPasswordComponent },
-  { path: 'verify-email-address', component: VerifyEmailComponent }
+  { path: 'verify-email-address', component: VerifyEmailComponent },
+
+  { path: 'action', component: ActionComponent, canActivate: [AuthGuard] },
+  { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },
 ];
 
 @NgModule({
