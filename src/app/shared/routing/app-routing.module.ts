@@ -13,7 +13,8 @@ import { HomeComponent } from 'src/app/components/home/home.component';
 import { AboutUsComponent } from '../../components/about-us/about-us.component';
 import { DetailComponent } from '../../components/detail/detail.component';
 
-import { ActionComponent } from '../../components/action/action.component'
+import { ActionComponent } from '../../components/action/action.component';
+import { HeatComponent } from '../../components/heat/heat.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -28,6 +29,7 @@ const routes: Routes = [
   { path: 'verify-email-address', component: VerifyEmailComponent },
 
   { path: 'action', component: ActionComponent, canActivate: [AuthGuard] },
+  { path: 'heat', component: HeatComponent, canActivate: [AuthGuard] },
   { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },
 ];
 

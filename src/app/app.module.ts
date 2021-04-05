@@ -35,6 +35,7 @@ import { ActionComponent } from './components/action/action.component';
 import { AdminSiderBarComponent } from './shared/admin-sider-bar/admin-sider-bar.component';
 import { AdminNavBarComponent } from './shared/admin-nav-bar/admin-nav-bar.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { HeatComponent } from './components/heat/heat.component';
 
 
 @NgModule({
@@ -53,7 +54,8 @@ import { FooterComponent } from './shared/footer/footer.component';
     ActionComponent,
     AdminSiderBarComponent,
     AdminNavBarComponent,
-    FooterComponent
+    FooterComponent,
+    HeatComponent
   ],
   imports: [
     BrowserModule,
