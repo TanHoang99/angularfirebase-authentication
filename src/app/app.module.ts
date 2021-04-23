@@ -17,7 +17,7 @@ import { VerifyEmailComponent } from './components/verify-email/verify-email.com
 
 // Firebase services + enviorment module
 
-import {AngularFireModule} from 'angularfire2';
+import {AngularFireModule} from '@angular/fire';
 import { AngularFireAuthModule } from "@angular/fire/auth";
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from '../environments/environment';
@@ -36,6 +36,7 @@ import { AdminSiderBarComponent } from './shared/admin-sider-bar/admin-sider-bar
 import { AdminNavBarComponent } from './shared/admin-nav-bar/admin-nav-bar.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { HeatComponent } from './components/heat/heat.component';
+import { NotesComponent } from './components/notes/notes.component';
 
 
 @NgModule({
@@ -55,7 +56,8 @@ import { HeatComponent } from './components/heat/heat.component';
     AdminSiderBarComponent,
     AdminNavBarComponent,
     FooterComponent,
-    HeatComponent
+    HeatComponent,
+    NotesComponent
   ],
   imports: [
     BrowserModule,

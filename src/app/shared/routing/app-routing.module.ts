@@ -16,6 +16,8 @@ import { DetailComponent } from '../../components/detail/detail.component';
 import { ActionComponent } from '../../components/action/action.component';
 import { HeatComponent } from '../../components/heat/heat.component';
 
+import { NotesComponent } from '../../components/notes/notes.component';
+
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full'},
   { path: 'sign-in', component: SignInComponent},
@@ -31,6 +33,8 @@ const routes: Routes = [
   { path: 'action', component: ActionComponent, canActivate: [AuthGuard] },
   { path: 'heat', component: HeatComponent, canActivate: [AuthGuard] },
   { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },
+  { path: 'notes', component: NotesComponent, canActivate: [AuthGuard] },
+
 ];
 
 @NgModule({
